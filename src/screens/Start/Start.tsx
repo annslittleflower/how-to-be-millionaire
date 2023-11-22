@@ -9,10 +9,9 @@ const StartScreen = () => {
         src='/how-to-be-millionaire/hand.svg'
         alt='hand-icon'
       />
-
       <div className={styles.textWrapper}>
-        <h1 className={styles.headerText}>Who wants to be a millionaire?</h1>
-        <Button>hello</Button>
+        <div className={styles.headerText}>Who wants to be a millionaire?</div>
+        <Button>Start</Button>
       </div>
     </div>
   );

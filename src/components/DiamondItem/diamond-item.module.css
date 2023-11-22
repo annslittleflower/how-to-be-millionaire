@@ -1,0 +1,32 @@
+.item {
+  position: relative;
+	width: 25rem;
+	height: 4.5rem;
+  background-color: var(--black-40);
+
+  clip-path: polygon(8% 0%, 92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%);
+}
+
+ 
+
+.inside {
+  position: absolute;
+  padding-left: 2rem;
+  align-items: center;
+  display: flex;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background: white;
+  
+  clip-path: polygon(8% 0%, 92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%);
+}
+
+
+.prefix {
+  color: var(--orange);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}

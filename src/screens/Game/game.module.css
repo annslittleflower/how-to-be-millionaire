@@ -1,0 +1,41 @@
+.game {
+  height: 100vh;
+  display: flex;
+}
+
+.questionBoard {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  background-color: var(--black-5);
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.questionTitle {
+  margin: 0 4rem;
+  font-size: 2rem;
+  color: var(--black);
+  font-weight: bold;
+  max-width: 39rem;
+}
+
+.answers {
+  margin-left: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ 
+
+.levelMenu {
+  background-color: var(--white);
+}
+
+
+
+
+@media screen and (max-width: 48rem){
+
+}

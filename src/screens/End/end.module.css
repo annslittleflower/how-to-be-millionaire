@@ -1,17 +1,20 @@
-.start {
+.end {
   margin: 0;
+  background-color: var(--black-5);
   display: flex;
   padding: 0 4rem;
   gap: 2rem;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: linear-gradient(to bottom right, var(--white) 50%,var(--orange-5) 50%);
 }
 
 .headerText {
   margin-bottom: 2rem;
+  font-weight: 600;
+
   font-size: 3.5rem;
+  line-height: 4rem;
   color: var(--black);
 }
 
@@ -24,17 +27,29 @@
   max-width: 39rem;
 }
 
+.total {
+  font-size: 2rem;
+  opacity: 50%;
+  font-weight: 600;
+  line-height: 3rem;
+}
+
 @media screen and (max-width: 48rem){
-  .start {
-    flex-wrap: wrap;
+  .end {
     padding: 0 1rem;
-    align-items: end;
-   
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .total {
+    font-size: 1.125rem;
   }
 
   .textWrapper {
     text-align: center;
     padding-bottom: 3rem;
+    margin-top: auto;
   }
 
   .headerText {
@@ -45,5 +60,6 @@
 
   .handImage {
     height: 12rem;
+    margin-top: auto;
   }
 }

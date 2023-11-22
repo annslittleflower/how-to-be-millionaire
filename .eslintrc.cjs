@@ -16,9 +16,6 @@ module.exports = {
   ],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh'],
-  // plugins: [
-    // '@typescript-eslint', 'import',
-    //  'react', 'react-hooks', 'jsx-a11y', 'prettier'],
   parserOptions: {
     ecmaVersion: 2021,
     sourceType: 'module',

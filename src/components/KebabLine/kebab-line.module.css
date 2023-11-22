@@ -1,0 +1,17 @@
+.kebabLine {
+  position: relative;
+}
+
+.kebabLine::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-top: 2px solid var(--black-40);
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.active::before {
+  border-top: 2px solid var(--orange);
+}
