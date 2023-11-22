@@ -1,0 +1,50 @@
+.start {
+  margin: 0;
+  display: flex;
+  padding: 0 4rem;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, var(--white) 50%,var(--orange-5) 50%);
+}
+
+.headerText {
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  color: var(--black);
+}
+
+.handImage {
+  min-width: 18rem;
+  max-width: 50%;
+  /* width: 100%; */
+}
+
+.textWrapper {
+  max-width: 39rem;
+}
+
+@media screen and (max-width: 48rem){
+  .start {
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    align-items: end;
+   
+  }
+
+  .textWrapper {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+
+  .headerText {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+
+  .handImage {
+    height: 12rem;
+  }
+}

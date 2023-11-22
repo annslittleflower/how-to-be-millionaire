@@ -1,11 +1,12 @@
-// import { useState } from 'react';
+import { useState } from 'react';
 // import viteLogo from '/vite.svg' from public
-import './App.css';
+import StartScreen from '@/screens/Start/Start';
 
-function App() {
+const App = () => {
+  const [isStart] = useState(true);
   // const a = '';
 
-  return <div>he aawd wad wd dllo</div>;
-}
+  return <>{isStart ? <StartScreen /> : null}</>;
+};
 
 export default App;

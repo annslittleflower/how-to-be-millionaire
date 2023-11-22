@@ -1,0 +1,21 @@
+.button {
+  border: 0;
+  border-radius: 0.75rem;
+  max-width: 18.5rem;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.25rem;
+  min-height: 4rem;
+  cursor: pointer;
+
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+@media (max-width: 48rem){
+  .button {
+    font-size: 0.875rem;
+    max-width: 18rem;
+    min-height: 3rem;
+  }
+}
