@@ -1,45 +1,46 @@
+const path = require('path')
+
 module.exports = {
-    "env": {
-        "browser": true,
-        "es2021": true
+  root: true,
+  env: { browser: true, es2020: true },
+  extends: [
+    'airbnb-typescript',
+    'eslint:recommended',
+    'plugin:import/recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:jsx-a11y/recommended',
+
+    'plugin:@typescript-eslint/recommended',
+    'prettier'
+  ],
+  parser: '@typescript-eslint/parser',
+  plugins: ['react-refresh'],
+  // plugins: [
+    // '@typescript-eslint', 'import',
+    //  'react', 'react-hooks', 'jsx-a11y', 'prettier'],
+  parserOptions: {
+    ecmaVersion: 2021,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
     },
-    "extends": [
-        "airbnb",
-        "airbnb-typescript",
-        "airbnb-hooks",
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:react/recommended"
-    ],
-    "overrides": [
-        {
-            "env": {
-                "node": true
-            },
-            "files": [
-                ".eslintrc.{js,cjs}"
-            ],
-            "parserOptions": {
-                "sourceType": "script"
-            }
-        }
-    ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
+    project: ['./tsconfig.json']
+  },
+  rules: {
+    "import/no-unresolved": "error",
+    "import/extensions": 0,
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    'react/react-in-jsx-scope': 0,
+    'react/jsx-uses-react': 0,
+    'comma-dangle': [2, "always-multiline"]
+  },
+  settings: {
+    "import/resolver": {
+      typescript: {} // this loads <rootdir>/tsconfig.json to eslint
     },
-    "plugins": [
-        "@typescript-eslint",
-        "react"
-    ],
-    "rules": {
-        "react/react-in-jsx-scope": "off",
-        "react/jsx-uses-react": "off",
-    },
-    "settings": {
-        "react": {
-          "version": "detect"
-        }
+    react: {
+      version: "detect"
     }
+  }
 }

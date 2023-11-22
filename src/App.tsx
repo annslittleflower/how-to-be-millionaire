@@ -3,14 +3,9 @@
 import './App.css';
 
 function App() {
+  // const a = '';
 
-
-  
-  return (
-    <div>
-      hello
-    </div>
-  );
+  return <div>he awd dllo</div>;
 }
 
 export default App;

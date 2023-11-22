@@ -1,8 +1,5 @@
-
 const Game = () => {
-  return (
-    <div>Game</div>
-  );
+  return <div>Hello, React</div>;
 };
 
 export default Game;
