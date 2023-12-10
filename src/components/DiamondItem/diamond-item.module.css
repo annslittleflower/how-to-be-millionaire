@@ -1,17 +1,31 @@
 .item {
   position: relative;
-	width: 25rem;
-	height: 4.5rem;
+	max-width: 25rem;
+  width: 25rem;
+	min-height: 4.5rem;
+  height: auto;
   background-color: var(--black-40);
-
+  color: var(--black);
   clip-path: polygon(8% 0%, 92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%);
 }
 
- 
+.small {
+  min-height: 2.5rem;
+  width: 15rem;
+}
+
+.active {
+  background-color: var(--orange);
+  color: var(--orange);
+}
+
+.disabled {
+  color: var(--black-40);
+}
 
 .inside {
   position: absolute;
-  padding-left: 2rem;
+  padding: 0 2rem;
   align-items: center;
   display: flex;
   top: 2px;

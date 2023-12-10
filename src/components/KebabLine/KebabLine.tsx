@@ -12,7 +12,7 @@ const KebabLine = ({ size, isActive, children }: Props) => {
   return (
     <div
       style={{
-        padding: `${size}rem`,
+        padding: `0 ${size}rem`,
       }}
       className={classnames([styles.kebabLine, isActive ? styles.active : ''])}
     >

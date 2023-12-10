@@ -27,10 +27,17 @@
   flex-wrap: wrap;
 }
 
- 
+.answers > div {
+  margin-top: 2rem;
+} 
 
 .levelMenu {
   background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: auto;
 }
 
 

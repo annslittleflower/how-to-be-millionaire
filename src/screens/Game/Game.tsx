@@ -39,7 +39,31 @@ const GameScreen = () => {
           </KebabLine>
         </div>
       </div>
-      <div className={styles.levelMenu}>awd dwa</div>
+      <div className={styles.levelMenu}>
+        <KebabLine size={7}>
+          <DiamondItem
+            text='what'
+            size='small'
+          />
+        </KebabLine>
+        <KebabLine
+          size={7}
+          isActive
+        >
+          <DiamondItem
+            text='what'
+            size='small'
+            isActive
+          />
+        </KebabLine>
+        <KebabLine size={7}>
+          <DiamondItem
+            text='what'
+            size='small'
+            isDisabled
+          />
+        </KebabLine>
+      </div>
     </div>
   );
 };
