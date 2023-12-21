@@ -2,6 +2,7 @@
   position: relative;
 	max-width: 25rem;
   width: 25rem;
+  min-width: 20rem;
 	min-height: 4.5rem;
   height: auto;
   background-color: var(--black-40);
@@ -11,8 +12,16 @@
 
 .small {
   min-height: 2.5rem;
-  width: 15rem;
+  width: 10rem;
 }
+
+@media (max-width: 48rem){
+  .item {
+    min-height: 2.5rem;
+    max-width: 15rem;
+  }
+}
+
 
 .active {
   background-color: var(--orange);

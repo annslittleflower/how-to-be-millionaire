@@ -3,21 +3,28 @@ import styles from './kebab-line.module.css';
 import { classnames } from '@/utils/classnames';
 
 type Props = {
-  size: number;
   children: ReactNode;
   isActive?: boolean;
 };
 
-const KebabLine = ({ size, isActive, children }: Props) => {
+const KebabLine = ({ isActive, children }: Props) => {
   return (
-    <div
-      style={{
-        padding: `0 ${size}rem`,
-      }}
-      className={classnames([styles.kebabLine, isActive ? styles.active : ''])}
-    >
-      {children}
+    <div className={styles.kebab}>
+      <div
+        // style={{
+        //   padding: `0 ${size}rem`,
+        // }}
+        className={classnames([styles.kebabLine, isActive ? styles.active : ''])}
+      />
+        {children}
+      <div
+        // style={{
+        //   padding: `0 ${size}rem`,
+        // }}
+        className={classnames([styles.kebabLine, isActive ? styles.active : ''])}
+      />
     </div>
+
   );
 };
 

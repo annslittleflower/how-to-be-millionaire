@@ -1,8 +1,23 @@
-.kebabLine {
-  position: relative;
+.kebab {
+  display: flex;
+  align-items: center;
 }
 
-.kebabLine::before {
+ 
+
+.kebabLine {
+  position: relative;
+  border-top: 2px solid var(--black-40);
+  width: 100%;
+  min-width: 1rem;
+  flex: 1;
+}
+
+.kebabLine.active {
+  border-top: 2px solid var(--orange);
+} 
+
+/* .kebabLine::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -14,4 +29,4 @@
 
 .active::before {
   border-top: 2px solid var(--orange);
-}
+} */

@@ -3,16 +3,32 @@ import StartScreen from '@/screens/Start';
 import Game from '@/screens/Game';
 import EndScreen from '@/screens/End';
 
+const screens = {
+  start: 'start',
+  game: 'game',
+  end: 'end',
+} as const
+
 const App = () => {
-  const [isStart] = useState(false);
-  const [isPlaying] = useState(true);
-  const [isEnd] = useState(false);
+  const [currentScreen, setCurrentScreen] = useState(screens.game);
+
+  const getScreen = (screen: keyof typeof screens) => {
+    if (screen === 'start') {
+      return <StartScreen />
+    }
+
+    if (screen === 'game') {
+      return <Game />
+    }
+
+    if (screen === 'end') {
+      return <EndScreen />
+    }
+  }
 
   return (
     <>
-      {isStart ? <StartScreen /> : null}
-      {isPlaying ? <Game /> : null}
-      {isEnd ? <EndScreen /> : null}
+      {getScreen(currentScreen)}
     </>
   );
 };
